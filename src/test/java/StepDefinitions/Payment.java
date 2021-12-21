@@ -30,7 +30,8 @@ public class Payment {
 
 	@When("^user click on login button$")
 	public void user_click_on_login_button()  {
-		System.out.println("user click on login button ===");
+		System.out.println("user click on login button1 ---------------------------------------------------");
+		System.out.println("user click on login button2 ---------------------------------------------------");
 	}
 
 	@Then("^Home page should be displayed$")
