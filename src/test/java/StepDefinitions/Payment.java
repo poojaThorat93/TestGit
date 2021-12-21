@@ -30,7 +30,7 @@ public class Payment {
 
 	@When("^user click on login button$")
 	public void user_click_on_login_button()  {
-		System.out.println("user click on login button ===");
+		System.out.println("user click on login button ++++++++++++++++++++++");
 	}
 
 	@Then("^Home page should be displayed$")
@@ -58,7 +58,17 @@ public void user_enter_username_credentials( DataTable credentials)  {
 			
 }
 	
-	
+
+@When("^User enter username credentials$")
+public void user_enter_username_credentials123( DataTable credentials)  {
+	 List<List<String>> data = credentials.raw();
+	 																		// row / column
+     System.out.println("-------------------------------------------------"+data.get(0).get(0));
+     System.out.println("-------------------------------------------------"+data.get(0).get(1));
+
+
+			
+}
 	
 	
 }
